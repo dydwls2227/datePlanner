@@ -1,0 +1,14 @@
+api:
+  service:
+    key: ${SERVICE_KEY}
+
+spring:
+  ai:
+    openai:
+      api-key: ${GEMINI_API_KEY}
+      chat:
+        base-url: "https://generativelanguage.googleapis.com/v1beta/openai/"
+        options:
+          model: "gemini-2.5-flash-lite"
+          temperature: 0.0
+        completions-path: "/chat/completions"
